@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/A7med-Mido/educationalPlatformApi/internal/utils"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/utils/constants"
+	"github.com/A7med-Mido/educationalPlatformApi/src/utils"
+	"github.com/A7med-Mido/educationalPlatformApi/src/utils/constants"
 	"github.com/gofiber/fiber/v3"
 )
 

@@ -3,8 +3,8 @@ package services
 import (
 	"encoding/json"
 	"github.com/google/uuid"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/models"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/repositories"
+	"github.com/A7med-Mido/educationalPlatformApi/src/models"
+	"github.com/A7med-Mido/educationalPlatformApi/src/repositories"
 )
 
 type ReportService interface {

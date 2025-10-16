@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v3"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/config"       // Assuming module is edu-platform; adjust if needed
-	"github.com/A7med-Mido/educationalPlatformApi/internal/database"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/handlers"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/middleware"
+	"github.com/A7med-Mido/educationalPlatformApi/src/config"       // Assuming module is edu-platform; adjust if needed
+	"github.com/A7med-Mido/educationalPlatformApi/src/database"
+	"github.com/A7med-Mido/educationalPlatformApi/src/handlers"
+	"github.com/A7med-Mido/educationalPlatformApi/src/middleware"
 )
 
 func main() {

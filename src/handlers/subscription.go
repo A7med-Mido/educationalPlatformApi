@@ -3,8 +3,8 @@ package handlers
 import (
 	"github.com/gofiber/fiber/v3"
 	"github.com/google/uuid"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/services"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/repositories"
+	"github.com/A7med-Mido/educationalPlatformApi/src/services"
+	"github.com/A7med-Mido/educationalPlatformApi/src/repositories"
 )
 
 var subscriptionService = services.NewSubscriptionService()

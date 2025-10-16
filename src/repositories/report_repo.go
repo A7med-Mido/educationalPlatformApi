@@ -1,8 +1,8 @@
 package repositories
 
 import (
-	"github.com/A7med-Mido/educationalPlatformApi/internal/database"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/models"
+	"github.com/A7med-Mido/educationalPlatformApi/src/database"
+	"github.com/A7med-Mido/educationalPlatformApi/src/models"
 	"gorm.io/gorm"
 )
 

@@ -2,9 +2,9 @@ package handlers
 
 import (
 	"github.com/gofiber/fiber/v3"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/models"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/utils"
-	"github.com/A7med-Mido/educationalPlatformApi/internal/services"
+	"github.com/A7med-Mido/educationalPlatformApi/src/models"
+	"github.com/A7med-Mido/educationalPlatformApi/src/utils"
+	"github.com/A7med-Mido/educationalPlatformApi/src/services"
 	"golang.org/x/crypto/bcrypt"
 )
 
