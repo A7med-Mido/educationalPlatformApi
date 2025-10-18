@@ -26,7 +26,6 @@ func main() {
 	admin.Put("/courses/:id", handlers.UpdateCourse)
 	admin.Delete("/courses/:id", handlers.DeleteCourse)
 	admin.Post("/courses/:id/thumbnail", handlers.UploadThumbnail)
-	admin.Get("/reports", handlers.CreateCourse)
 
 	// Protected API routes for students
 	student := app.Group("/api", middleware.AuthMiddleware("student"))

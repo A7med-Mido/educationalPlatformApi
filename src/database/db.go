@@ -22,7 +22,7 @@ func ConnectDB() {
 	DB = db
 
 	// Auto-migrate models
-	DB.AutoMigrate(&models.User{}, &models.Course{}, &models.Subscription{}, &models.Report{})
+	DB.AutoMigrate(&models.User{}, &models.Course{}, &models.Subscription{})
 
 	// Seed teacher if not exists
 	seedTeacher()
@@ -30,7 +30,8 @@ func ConnectDB() {
 
 func seedTeacher() {
 	var teacher models.User
-	if err := DB.Where("role = ?", "teacher").First(&teacher).Error; err == gorm.ErrRecordNotFound {
+	err := DB.Where("role = ?", "teacher").First(&teacher).Error
+	if err == gorm.ErrRecordNotFound {
 		hashedPass, _ := bcrypt.GenerateFromPassword([]byte("password"), bcrypt.DefaultCost)
 		teacher = models.User{
 			ID:       uuid.New(),

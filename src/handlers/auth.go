@@ -8,14 +8,6 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-// import (
-// 	"github.com/gofiber/fiber/v3"
-// 	"github.com/yourusername/edu-platform/internal/models"
-// 	"github.com/yourusername/edu-platform/internal/services"
-// 	"github.com/yourusername/edu-platform/internal/utils"
-// 	"golang.org/x/crypto/bcrypt"
-// )
-
 var userService = services.NewUserService()
 
 func Login(c fiber.Ctx) error {
