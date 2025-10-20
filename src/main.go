@@ -5,7 +5,7 @@ import (
 	"github.com/A7med-Mido/educationalPlatformApi/src/config"       // Assuming module is edu-platform; adjust if needed
 	"github.com/A7med-Mido/educationalPlatformApi/src/database"
 	"github.com/A7med-Mido/educationalPlatformApi/src/handlers"
-	"github.com/A7med-Mido/educationalPlatformApi/src/middleware"
+	"github.com/A7med-Mido/educationalPlatformApi/src/middlewares"
 )
 
 func main() {
@@ -28,9 +28,9 @@ func main() {
 	admin.Post("/courses/:id/thumbnail", handlers.UploadThumbnail)
 
 	// Protected API routes for students
-	student := app.Group("/api", middleware.AuthMiddleware("student"))
-	student.Get("/courses", handlers.GetAvailableCourses)
-	student.Post("/subscribe/:course_id", handlers.SubscribeToCourse)
+	// student := app.Group("/api", middleware.AuthMiddleware("student"))
+	// student.Get("/courses", handlers.GetAvailableCourses)
+	// student.Post("/subscribe/:course_id", handlers.SubscribeToCourse)
 
 	// Start the server
 	app.Listen(":3000")

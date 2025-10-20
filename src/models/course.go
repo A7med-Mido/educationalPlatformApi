@@ -7,7 +7,6 @@ import (
 
 type Course struct {
 	gorm.Model
-	ID          uuid.UUID `gorm:"type:uuid;primary_key" json:"id"`
 	Title       string    `json:"title"`
 	Description string    `json:"description"`
 	Thumbnail   string    `json:"thumbnail"` // Path to uploaded thumbnail

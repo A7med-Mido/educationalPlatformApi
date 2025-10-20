@@ -22,7 +22,7 @@ func ConnectDB() {
 	DB = db
 
 	// Auto-migrate models
-	DB.AutoMigrate(&models.User{}, &models.Course{}, &models.Subscription{})
+	DB.AutoMigrate(&models.User{}, &models.Course{})
 
 	// Seed teacher if not exists
 	seedTeacher()
