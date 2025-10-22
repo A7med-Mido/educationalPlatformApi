@@ -10,4 +10,6 @@ func main() {
 	app.Get("/", func(c fiber.Ctx) error {
 		return c.SendString("hello world !")
 	})
+
+	app.Listen(":3000")
 }
