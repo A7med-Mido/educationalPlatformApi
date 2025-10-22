@@ -1,13 +1,11 @@
 package models
 
 import (
-	"github.com/google/uuid"
-	"gorm.io/gorm"
+	"github.com/A7med-Mido/educationalPlatformApi/src/models/generics"
 )
 
 type User struct {
-	gorm.Model
-	ID       uuid.UUID `gorm:"type:uuid;primary_key" json:"id"`
+	generics.Model
 	Email    string    `gorm:"unique" json:"email"`
 	Password string    `json:"-"`
 	Role     string    `json:"role"` // "teacher" or "student"
